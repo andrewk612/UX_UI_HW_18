@@ -68,12 +68,21 @@ h5 {
     
 }
 
-h6{
+h6 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-style: italic;
     font-weight 501; 
 }
+
+h7 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+
 .spacing {
     line-height: 0.1;
 }
@@ -112,4 +121,9 @@ h6{
 
 .footer-bottom h6 {
     margin: 0;
+}
+
+
+.skillGrid img {
+    width: 25%;
 }

@@ -127,3 +127,34 @@ h7 {
 .skillGrid img {
     width: 25%;
 }
+
+.skillGrid {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    min-height: 700px;
+    grid-template-areas:
+    "gridAreaA gridAreaB"
+    "gridAreaC gridAreaC"; 
+    background-color: blue;
+}
+
+.gridAreaA {
+    grid-area: gridAreaA;
+    text-align: center;
+}
+
+.gridAreaB {
+    grid-area: gridAreaB;
+    text-align: center;
+}
+
+.gridAreaC {
+    grid-area: gridAreaC;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.gridAreaC img {
+    display: inline-block;
+}

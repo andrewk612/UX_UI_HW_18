@@ -124,6 +124,26 @@ h7 {
 }
 
 
+.flexContainer {
+    display: flex;
+    flex-direction: column; 
+    gap: px;
+    
+    
+    
+}
+
+.myWorkRow {
+    display: flex;
+    justify-content: space-between; /* Places text at opposite ends */
+    align-items: center;
+    width: 100%
+    padding: px; /* Optional: Padding inside each row */
+    border: 3px solid #ccc; /* Optional: Border around each row */
+    flex: 1;
+    
+}
+
 .skillGrid img {
     width: 25%;
 }
@@ -142,17 +162,21 @@ h7 {
 .gridAreaA {
     grid-area: gridAreaA;
     text-align: center;
+    margin-top: 70px;
+
 }
 
 .gridAreaB {
     grid-area: gridAreaB;
     text-align: center;
+    margin-top: 70px;
 }
 
 .gridAreaC {
     grid-area: gridAreaC;
     background-color: aquamarine;
     text-align: center;
+    margin-top: 
 }
 
 .gridAreaC img {

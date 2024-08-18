@@ -1,6 +1,6 @@
 
 body {
-    width: 1200px; /* Set a fixed width */
+    width: ; 
     margin: 0 auto; /* Center the content on larger screens */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -106,9 +106,6 @@ h7 {
     display: flex;
     justify-content: space-between; /* Aligns items to the right */
     align-items: center; /* Aligns items to the bottom */
-    
-    
-    
 }
 
 .footer-bottom img {
@@ -124,24 +121,42 @@ h7 {
 }
 
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+* {
+    box-sizing: inherit; /* Inherits the box-sizing property */
+  }
+
 .flexContainer {
     display: flex;
-    flex-direction: column; 
-    gap: px;
+    flex-direction: column;
     
-    
-    
+    width: 100vw;
+    margin: 0; /* Ensures no margin around the flex container */
+    padding: 0;
 }
 
 .myWorkRow {
     display: flex;
     justify-content: space-between; /* Places text at opposite ends */
     align-items: center;
-    width: 100%
-    padding: px; /* Optional: Padding inside each row */
-    border: 3px solid #ccc; /* Optional: Border around each row */
+    width: 100%;
+    padding: 0px; /* Optional: Padding inside each row */
+    border-width: 3px 0px 0px 0px ;
+    border-color: #ccc;  
+    border-style: solid;                   /*solid #ccc Optional: Border around each row */
     flex: 1;
     
+}
+.myWorkRow:last-child {
+    border-bottom: 3px;
+    border-color: #ccc;  
+    border-style: solid;  
 }
 
 .skillGrid img {
@@ -157,6 +172,7 @@ h7 {
     "gridAreaA gridAreaB"
     "gridAreaC gridAreaC"; 
     background-color: blue;
+    margin-top: auto;
 }
 
 .gridAreaA {
@@ -181,4 +197,8 @@ h7 {
 
 .gridAreaC img {
     display: inline-block;
+}
+
+.mySkills {
+    padding: 100px 0;
 }

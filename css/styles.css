@@ -1,6 +1,6 @@
 
 body {
-    width: ; 
+    width: 100%; 
     margin: 0 auto; /* Center the content on larger screens */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -192,7 +192,10 @@ html, body {
     grid-area: gridAreaC;
     background-color: aquamarine;
     text-align: center;
-    margin-top: 
+    margin-bottom: auto;
+    min-height: 500px;
+   
+    
 }
 
 .gridAreaC img {
@@ -201,4 +204,27 @@ html, body {
 
 .mySkills {
     padding: 100px 0;
+}
+
+
+@media only screen and (max-width: 600px){
+    .flexContainer { 
+        flex-direction: column;
+    
+    }
+
+    .skillGrid {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: 300px;
+        grid-template-areas:
+        "gridAreaA" 
+        "gridAreaB"
+        "gridAreaC"; 
+        background-color: blue;
+        margin-top: auto;
+        
+    }
+    * {
+        background-color: blue; !important
+    }
 }
